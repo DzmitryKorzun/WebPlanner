@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebPlanner.Domain.Entity;
 
 namespace WebPlanner.DAL
 {
@@ -14,7 +15,13 @@ namespace WebPlanner.DAL
             Database.EnsureCreated();
         }
 
+        #region DbSets
 
+        public DbSet<ItemGroup> itemGroups { get; set; }
+        public DbSet<ItemSubgrop> itemSubgrops { get; set; }
+
+
+        #endregion
 
     }
 }

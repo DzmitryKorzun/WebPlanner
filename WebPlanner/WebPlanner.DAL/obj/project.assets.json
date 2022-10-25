@@ -194,6 +194,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "WebPlanner.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WebPlanner.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebPlanner.Domain.dll": {}
+        }
       }
     }
   },
@@ -520,11 +530,17 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "WebPlanner.Domain/1.0.0": {
+      "type": "project",
+      "path": "../WebPlanner.Domain/WebPlanner.Domain.csproj",
+      "msbuildProject": "../WebPlanner.Domain/WebPlanner.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.EntityFrameworkCore >= 6.0.10"
+      "Microsoft.EntityFrameworkCore >= 6.0.10",
+      "WebPlanner.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -553,7 +569,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\WebPlanner\\WebPlanner\\WebPlanner.Domain\\WebPlanner.Domain.csproj": {
+              "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.Domain\\WebPlanner.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
