@@ -17,8 +17,8 @@ namespace WebPlanner.DAL
 
         #region DbSets
 
-        public DbSet<ItemGroup> itemGroups { get; set; }
-        public DbSet<ItemSubgrop> itemSubgrops { get; set; }
+        public DbSet<ItemGroup> ItemGroups { get; set; }
+        public DbSet<ItemSubgrop> ItemSubgrops { get; set; }
 
 
         #endregion

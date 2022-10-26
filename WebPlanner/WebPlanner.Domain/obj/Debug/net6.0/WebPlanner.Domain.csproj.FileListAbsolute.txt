@@ -1,0 +1,12 @@
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\bin\Debug\net6.0\WebPlanner.Domain.deps.json
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\bin\Debug\net6.0\WebPlanner.Domain.dll
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\bin\Debug\net6.0\WebPlanner.Domain.pdb
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\obj\Debug\net6.0\WebPlanner.Domain.csproj.AssemblyReference.cache
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\obj\Debug\net6.0\WebPlanner.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\obj\Debug\net6.0\WebPlanner.Domain.AssemblyInfoInputs.cache
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\obj\Debug\net6.0\WebPlanner.Domain.AssemblyInfo.cs
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\obj\Debug\net6.0\WebPlanner.Domain.csproj.CoreCompileInputs.cache
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\obj\Debug\net6.0\WebPlanner.Domain.dll
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\obj\Debug\net6.0\refint\WebPlanner.Domain.dll
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\obj\Debug\net6.0\WebPlanner.Domain.pdb
+D:\WebPlanner\WebPlanner\WebPlanner.Domain\obj\Debug\net6.0\ref\WebPlanner.Domain.dll

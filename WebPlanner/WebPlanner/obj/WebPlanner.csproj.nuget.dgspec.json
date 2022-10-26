@@ -4,14 +4,78 @@
     "D:\\WebPlanner\\WebPlanner\\WebPlanner\\WebPlanner.csproj": {}
   },
   "projects": {
-    "D:\\WebPlanner\\WebPlanner\\WebPlanner\\WebPlanner.csproj": {
+    "D:\\WebPlanner\\WebPlanner\\WebPlanner.DAL\\WebPlanner.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\WebPlanner.csproj",
-        "projectName": "WebPlanner",
-        "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\WebPlanner.csproj",
+        "projectUniqueName": "D:\\WebPlanner\\WebPlanner\\WebPlanner.DAL\\WebPlanner.DAL.csproj",
+        "projectName": "WebPlanner.DAL",
+        "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.DAL\\WebPlanner.DAL.csproj",
         "packagesPath": "C:\\Users\\Dmitry\\.nuget\\packages\\",
-        "outputPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\obj\\",
+        "outputPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dmitry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\WebPlanner\\WebPlanner\\WebPlanner.Domain\\WebPlanner.Domain.csproj": {
+                "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.Domain\\WebPlanner.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WebPlanner\\WebPlanner\\WebPlanner.Domain\\WebPlanner.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WebPlanner\\WebPlanner\\WebPlanner.Domain\\WebPlanner.Domain.csproj",
+        "projectName": "WebPlanner.Domain",
+        "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.Domain\\WebPlanner.Domain.csproj",
+        "packagesPath": "C:\\Users\\Dmitry\\.nuget\\packages\\",
+        "outputPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dmitry\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,10 +103,133 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WebPlanner\\WebPlanner\\WebPlanner.Service\\WebPlanner.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WebPlanner\\WebPlanner\\WebPlanner.Service\\WebPlanner.Service.csproj",
+        "projectName": "WebPlanner.Service",
+        "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.Service\\WebPlanner.Service.csproj",
+        "packagesPath": "C:\\Users\\Dmitry\\.nuget\\packages\\",
+        "outputPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dmitry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\WebPlanner\\WebPlanner\\WebPlanner.DAL\\WebPlanner.DAL.csproj": {
+                "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.DAL\\WebPlanner.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WebPlanner\\WebPlanner\\WebPlanner\\WebPlanner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\WebPlanner.csproj",
+        "projectName": "WebPlanner",
+        "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\WebPlanner.csproj",
+        "packagesPath": "C:\\Users\\Dmitry\\.nuget\\packages\\",
+        "outputPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dmitry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\WebPlanner\\WebPlanner\\WebPlanner.DAL\\WebPlanner.DAL.csproj": {
+                "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.DAL\\WebPlanner.DAL.csproj"
+              },
+              "D:\\WebPlanner\\WebPlanner\\WebPlanner.Service\\WebPlanner.Service.csproj": {
+                "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.Service\\WebPlanner.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             }
           },
           "imports": [

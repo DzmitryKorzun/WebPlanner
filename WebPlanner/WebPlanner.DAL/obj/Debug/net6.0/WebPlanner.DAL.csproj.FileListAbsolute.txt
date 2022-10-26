@@ -1,0 +1,15 @@
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\bin\Debug\net6.0\WebPlanner.DAL.deps.json
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\bin\Debug\net6.0\WebPlanner.DAL.dll
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\bin\Debug\net6.0\WebPlanner.DAL.pdb
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\bin\Debug\net6.0\WebPlanner.Domain.dll
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\bin\Debug\net6.0\WebPlanner.Domain.pdb
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.csproj.AssemblyReference.cache
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.AssemblyInfoInputs.cache
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.AssemblyInfo.cs
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.csproj.CoreCompileInputs.cache
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.csproj.CopyComplete
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.dll
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\refint\WebPlanner.DAL.dll
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.pdb
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\ref\WebPlanner.DAL.dll

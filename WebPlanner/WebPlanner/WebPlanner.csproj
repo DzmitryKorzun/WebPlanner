@@ -8,6 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebPlanner.DAL\WebPlanner.DAL.csproj" />
+    <ProjectReference Include="..\WebPlanner.Service\WebPlanner.Service.csproj" />
   </ItemGroup>
 
 </Project>
