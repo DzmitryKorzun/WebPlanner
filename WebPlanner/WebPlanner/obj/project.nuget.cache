@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6sik/ZyXp4C3xx6mdJDniWYIC3PM9YiGIowTaEGTegZLDEjzNT+DYjq9wYLp53fEB4eqiwBAKOQ78kOt1NbAYw==",
+  "dgSpecHash": "/L7za9Qqr7UO8uuOPanqORTbQgVt+jrA1QCiw0BzruKuOwdlKOMRFg1wp0Owk8bjYV5j3oHOBIwzW66xKj7VUw==",
   "success": true,
   "projectFilePath": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\WebPlanner.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\Dmitry\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Dmitry\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Dmitry\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Dmitry\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512",
     "C:\\Users\\Dmitry\\.nuget\\packages\\mysqlconnector\\2.1.2\\mysqlconnector.2.1.2.nupkg.sha512",
     "C:\\Users\\Dmitry\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.2\\pomelo.entityframeworkcore.mysql.6.0.2.nupkg.sha512",
     "C:\\Users\\Dmitry\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",

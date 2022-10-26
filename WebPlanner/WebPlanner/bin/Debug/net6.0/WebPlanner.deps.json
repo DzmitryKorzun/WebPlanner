@@ -9,6 +9,7 @@
       "WebPlanner/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.10",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.15.1",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.2",
           "WebPlanner.DAL": "1.0.0",
           "WebPlanner.Service": "1.0.0"
@@ -114,6 +115,7 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.15.1": {},
       "MySqlConnector/2.1.2": {
         "runtime": {
           "lib/net6.0/MySqlConnector.dll": {
@@ -266,6 +268,13 @@
       "sha512": "sha512-9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
       "path": "microsoft.extensions.primitives/6.0.0",
       "hashPath": "microsoft.extensions.primitives.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.15.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dcsF7rjxvMnqtfckpzWYvBsZsJD51yQVHSSgd2EN5/CJ/zQigJrfo313lvAwf0VL9ZOHLnJthuboadjnBAU7Ng==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.15.1",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
     },
     "MySqlConnector/2.1.2": {
       "type": "package",

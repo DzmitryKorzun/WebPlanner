@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kq2Qm8WWrQFyk2SFc4a8rUi0T7E76Ie4ieNz4pzqcT4=",
+  "Hash": "blld3bfofH9a+GxQaq7P7RB4K5LU8UzuVckxKx1OaVc=",
   "Source": "WebPlanner",
   "BasePath": "_content/WebPlanner",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\css\\index.css",
+      "SourceId": "WebPlanner",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\",
+      "BasePath": "_content/WebPlanner",
+      "RelativePath": "css/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\index.css"
+    },
     {
       "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\css\\site.css",
       "SourceId": "WebPlanner",
