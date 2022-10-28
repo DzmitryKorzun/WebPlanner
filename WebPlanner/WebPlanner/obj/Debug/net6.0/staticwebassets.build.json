@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "blld3bfofH9a+GxQaq7P7RB4K5LU8UzuVckxKx1OaVc=",
+  "Hash": "m4LvzuN6URxDMYGTBg9bT72jGaXvZ4VB6M91L2uLhQg=",
   "Source": "WebPlanner",
   "BasePath": "_content/WebPlanner",
   "Mode": "Default",
@@ -17,6 +17,40 @@
   ],
   "Assets": [
     {
+      "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\css\\_Layout.css",
+      "SourceId": "WebPlanner",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\",
+      "BasePath": "_content/WebPlanner",
+      "RelativePath": "css/_Layout.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\_Layout.css"
+    },
+    {
+      "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\css\\Background.css",
+      "SourceId": "WebPlanner",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\",
+      "BasePath": "_content/WebPlanner",
+      "RelativePath": "css/Background.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Background.css"
+    },
+    {
       "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\css\\index.css",
       "SourceId": "WebPlanner",
       "SourceType": "Discovered",
@@ -32,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\index.css"
+    },
+    {
+      "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\css\\LogRegForm.css",
+      "SourceId": "WebPlanner",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\",
+      "BasePath": "_content/WebPlanner",
+      "RelativePath": "css/LogRegForm.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LogRegForm.css"
     },
     {
       "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\css\\site.css",
@@ -66,23 +117,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\js\\site.js",
-      "SourceId": "WebPlanner",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\",
-      "BasePath": "_content/WebPlanner",
-      "RelativePath": "js/site.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

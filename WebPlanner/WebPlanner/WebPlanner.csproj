@@ -19,4 +19,9 @@
     <ProjectReference Include="..\WebPlanner.Service\WebPlanner.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
 </Project>
