@@ -47,6 +47,14 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.1.5, )"
             }
           },
           "imports": [
@@ -103,6 +111,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.1.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -161,6 +179,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.1.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -207,6 +235,9 @@
               "D:\\WebPlanner\\WebPlanner\\WebPlanner.DAL\\WebPlanner.DAL.csproj": {
                 "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.DAL\\WebPlanner.DAL.csproj"
               },
+              "D:\\WebPlanner\\WebPlanner\\WebPlanner.Domain\\WebPlanner.Domain.csproj": {
+                "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.Domain\\WebPlanner.Domain.csproj"
+              },
               "D:\\WebPlanner\\WebPlanner\\WebPlanner.Service\\WebPlanner.Service.csproj": {
                 "projectPath": "D:\\WebPlanner\\WebPlanner\\WebPlanner.Service\\WebPlanner.Service.csproj"
               }
@@ -227,9 +258,17 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.15.1, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.1.5, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

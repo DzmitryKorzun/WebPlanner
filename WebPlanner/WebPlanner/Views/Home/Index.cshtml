@@ -1,4 +1,7 @@
-﻿@{
+﻿@using WebPlanner.Domain.Auxiliary_Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model UserManagerModel
+@{
     ViewBag.Title = "Home";
     Layout = "~/Views/_Layout.cshtml";
 }
@@ -11,48 +14,34 @@
 		<link href="@Url.Content("~/css/Background.css")" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-	
-
-  <div class='light x1'></div>
-  <div class='light x2'></div>
-  <div class='light x3'></div>
-  <div class='light x4'></div>
-  <div class='light x5'></div>
-  <div class='light x6'></div>
-  <div class='light x7'></div>
-  <div class='light x8'></div>
-  <div class='light x9'></div>
-
-
-			<div class="container" id="container">
+		<div class='light x1'></div>
+		<div class='light x2'></div>
+		<div class='light x3'></div>
+		<div class='light x4'></div>
+		<div class='light x5'></div>
+		<div class='light x6'></div>
+		<div class='light x7'></div>
+		<div class='light x8'></div>
+		<div class='light x9'></div>
+		<div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form asp-action="Register">
 			<h1>Create Account</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
 			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+			<input type="text" placeholder="Name" asp-for="RegName" />
+			<input type="email" placeholder="Email" asp-for="RegEmail" />
+			<input type="password" placeholder="Password" asp-for="RegPassword" />
 			<button>Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form asp-action="Login">
 			<h1>Sign in</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
 			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+			<input type="email" placeholder="Email" asp-for="LoginEmail" />
+			<input type="password" placeholder="Password" asp-for="LoginPassword" />
 			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
+			<button type="submit">Sign In</button>
 		</form>
 	</div>
 	<div class="overlay-container">

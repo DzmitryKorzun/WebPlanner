@@ -1,4 +1,5 @@
-﻿
+﻿@using WebPlanner.Domain.Enums
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <html>
 <head>
   <meta charset="utf-8">
@@ -11,12 +12,26 @@
     <h1>Web planner</h1>
 
 <nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Blog</a>
-  <a href="#">Portefolio</a>
-  <a href="#">Contact</a>
-  <div class="animation start-home"></div>
+  @if(User.Identity.IsAuthenticated)
+  {
+    <a href="#">Home</a>     
+    <a href="#">My day</a>
+    <a href="#">Wish list</a>
+    <a asp-controller="CashSaving" asp-action="Cash">Cash saving</a>
+    <a href="@Url.Action("SetUpAccount","Account")">Account</a>
+    <div class="animation start-home"></div>
+  }
+  else
+  {
+    <a href="" class="disabled">Home</a>
+    <a href="" class="disabled">My day</a>
+    <a href="" class="disabled">Wish list</a>
+    <a href="" class="disabled">Cash saving</a>
+    <a href="" class="disabled">Account</a>
+    <div class="animation start-home"></div>
+  }
+        
+  
 </nav>
 
 <div>

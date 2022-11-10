@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m4LvzuN6URxDMYGTBg9bT72jGaXvZ4VB6M91L2uLhQg=",
+  "Hash": "OECPLVtddwH6MdhVhDJtAECGhFGWaF07RKF9uwZJ5TQ=",
   "Source": "WebPlanner",
   "BasePath": "_content/WebPlanner",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\css\\LogRegForm.css"
     },
     {
+      "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\css\\SetUpAccount.css",
+      "SourceId": "WebPlanner",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\",
+      "BasePath": "_content/WebPlanner",
+      "RelativePath": "css/SetUpAccount.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\SetUpAccount.css"
+    },
+    {
       "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\css\\site.css",
       "SourceId": "WebPlanner",
       "SourceType": "Discovered",
@@ -117,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\js\\Chart.js",
+      "SourceId": "WebPlanner",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\",
+      "BasePath": "_content/WebPlanner",
+      "RelativePath": "js/Chart.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Chart.js"
     },
     {
       "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

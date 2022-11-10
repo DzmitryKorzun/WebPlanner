@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\WebPlanner\WebPlanner\WebPlanner
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/WebPlanner/WebPlanner/WebPlanner/Views/Account/SetUpAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTZXRVcEFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WebPlanner/WebPlanner/WebPlanner/Views/CashSaving/Cash.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzaFNhdmluZ1xDYXNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/WebPlanner/WebPlanner/WebPlanner/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

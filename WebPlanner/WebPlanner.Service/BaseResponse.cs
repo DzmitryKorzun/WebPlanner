@@ -16,7 +16,7 @@ namespace WebPlanner.Service
     public enum ResponseStatus
     {
         OK,
-        UnknownEror,
+        UnknownError,
         NoData,
         InternalServerError
     }

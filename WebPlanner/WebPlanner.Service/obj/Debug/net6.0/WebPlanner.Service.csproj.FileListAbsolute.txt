@@ -1,3 +1,10 @@
+D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.csproj.AssemblyReference.cache
+D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.AssemblyInfoInputs.cache
+D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.AssemblyInfo.cs
+D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.csproj.CoreCompileInputs.cache
+D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.Resource.AppResourses.resources
+D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.csproj.GenerateResource.cache
 D:\WebPlanner\WebPlanner\WebPlanner.Service\bin\Debug\net6.0\WebPlanner.Service.deps.json
 D:\WebPlanner\WebPlanner\WebPlanner.Service\bin\Debug\net6.0\WebPlanner.Service.dll
 D:\WebPlanner\WebPlanner\WebPlanner.Service\bin\Debug\net6.0\WebPlanner.Service.pdb
@@ -5,11 +12,6 @@ D:\WebPlanner\WebPlanner\WebPlanner.Service\bin\Debug\net6.0\WebPlanner.DAL.dll
 D:\WebPlanner\WebPlanner\WebPlanner.Service\bin\Debug\net6.0\WebPlanner.Domain.dll
 D:\WebPlanner\WebPlanner\WebPlanner.Service\bin\Debug\net6.0\WebPlanner.DAL.pdb
 D:\WebPlanner\WebPlanner\WebPlanner.Service\bin\Debug\net6.0\WebPlanner.Domain.pdb
-D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.csproj.AssemblyReference.cache
-D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.GeneratedMSBuildEditorConfig.editorconfig
-D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.AssemblyInfoInputs.cache
-D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.AssemblyInfo.cs
-D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.csproj.CoreCompileInputs.cache
 D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.csproj.CopyComplete
 D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\WebPlanner.Service.dll
 D:\WebPlanner\WebPlanner\WebPlanner.Service\obj\Debug\net6.0\refint\WebPlanner.Service.dll

@@ -13,3 +13,5 @@ D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.dll
 D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\refint\WebPlanner.DAL.dll
 D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.pdb
 D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\ref\WebPlanner.DAL.dll
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.AppResources.resources
+D:\WebPlanner\WebPlanner\WebPlanner.DAL\obj\Debug\net6.0\WebPlanner.DAL.csproj.GenerateResource.cache
