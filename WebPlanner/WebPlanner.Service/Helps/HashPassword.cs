@@ -19,6 +19,6 @@ namespace WebPlanner.Helps
         {
             return DateTime.Now.Subtract(new DateTime(1970, 1, 1)).TotalSeconds.ToString();
         }
-        public static bool PasswordCheck(string password, string hash, string salt) => GetHash(password, salt) == hash;
+        public static bool PasswordCheck(string? password, string? hash, string? salt) => GetHash(password, salt) == hash;
     }
 }

@@ -12,7 +12,7 @@ namespace WebPlanner.Helps
         }
         public string CreateDefaultUserName()
         {
-            return Resource.AppResourses.APP_RES_FIRST_PART_OF_UNIQUE_USERNAME + accountService.GetLastUserId();
+            return Resource.AppResourses.APP_RES_FIRST_PART_OF_UNIQUE_USERNAME;
         }
     }
 }

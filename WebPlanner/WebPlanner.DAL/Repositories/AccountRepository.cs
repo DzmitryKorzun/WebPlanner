@@ -23,6 +23,18 @@ namespace WebPlanner.DAL.Repositories
             return await context.SaveChangesAsync();
         }
 
+        public async Task<int> ChangePassword(Account account, string newPass)
+        {
+            var user = await context.Accounts.FirstOrDefaultAsync(x => x.Id == account.Id);
+            if (user != null)
+            {
+                user.HashPassword = newPass;
+                return context.SaveChanges();
+            }
+            else return -1;
+
+        }
+
         public Task<int> Delete(int Id)
         {
             throw new NotImplementedException();
@@ -41,6 +53,20 @@ namespace WebPlanner.DAL.Repositories
         public Task<int> Update(int Id)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<int> UpdateProfileInformation(Account updatedAccount)
+        {
+            var account = await context.Accounts.FirstOrDefaultAsync(x => x.Email == updatedAccount.Email);
+            if (account != null)
+            {
+                account.Name = updatedAccount.Name;
+                account.Bio = updatedAccount.Bio;
+                account.URL = updatedAccount.URL;
+                account.Location = updatedAccount.Location;
+                return await context.SaveChangesAsync();
+            }
+            return -1;
         }
     }
 }

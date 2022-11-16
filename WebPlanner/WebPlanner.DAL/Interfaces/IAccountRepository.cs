@@ -11,5 +11,7 @@ namespace WebPlanner.DAL.Interfaces
     {
         public Task<Account> GetAccountByEmail(string email);
         public Task<int> GetLastAccountId();
+        public Task<int> UpdateProfileInformation(Account account);
+        public Task<int> ChangePassword(Account account, string? newPass);
     }
 }

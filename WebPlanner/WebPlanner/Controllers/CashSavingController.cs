@@ -6,13 +6,10 @@ namespace WebPlanner.Controllers
     [Authorize]
     public class CashSavingController : Controller
     {
-
-
-        [HttpGet]
-        
+        [HttpGet]        
         public IActionResult Cash()
         {
-            Console.WriteLine(User.Identity.IsAuthenticated);
+
             return View();
         }
     }

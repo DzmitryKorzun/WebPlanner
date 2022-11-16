@@ -18,6 +18,7 @@ namespace WebPlanner.Service
         OK,
         UnknownError,
         NoData,
-        InternalServerError
+        InternalServerError,
+        InvalidPassword,
     }
 }

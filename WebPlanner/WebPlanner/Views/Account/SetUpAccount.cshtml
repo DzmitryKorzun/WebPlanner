@@ -1,6 +1,7 @@
-﻿@using WebPlanner.Domain.Entity
+﻿@using WebPlanner.Domain.Auxiliary_Models
+@using WebPlanner.Domain.Entity
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@model Account
+@model UserSettingModel
 @{
     ViewBag.Title = "Account";
 }
@@ -58,30 +59,30 @@
             </div>
             <div class="card-body tab-content">
               <div class="tab-pane active" id="profile">
-                <h6>@User.Identity.Name</h6>
+                <h6>Poste: @User?.Identity?.Name , ID: @Model.Name</h6>
                 <hr>
-                <form>
+                <form asp-controller="Account" asp-action="UpdateProfileInformation">
                   <div class="form-group">
                     <label for="fullName">Full Name</label>
-                    <input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter your fullname" value="Kenneth Valdez">
+                    <input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter your name" value="@Model.Name" asp-for="Name">
                     <small id="fullNameHelp" class="form-text text-muted">Your name may appear around here where you are mentioned. You can change or remove it at any time.</small>
                   </div>
                   <div class="form-group">
                     <label for="bio">Your Bio</label>
-                    <textarea class="form-control autosize" id="bio" placeholder="Write something about you" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 62px;">A front-end developer that focus more on user interface design, a web interface wizard, a connector of awesomeness.</textarea>
+                    <textarea class="form-control autosize" id="bio" placeholder="Write something about you" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 62px;" asp-for="Bio">@Model.Bio</textarea>
                   </div>
                   <div class="form-group">
                     <label for="url">URL</label>
-                    <input type="text" class="form-control" id="url" placeholder="Enter your website address" value="http://benije.ke/pozzivkij">
+                    <input type="text" class="form-control" id="url" placeholder="Enter your website address" value="@Model.URL" asp-for="URL">
                   </div>
                   <div class="form-group">
                     <label for="location">Location</label>
-                    <input type="text" class="form-control" id="location" placeholder="Enter your location" value="Bay Area, San Francisco, CA">
+                    <input type="text" class="form-control" id="location" placeholder="Enter your location" value="@Model.Location" asp-for="Location">
                   </div>
                   <div class="form-group small text-muted">
                     All of the fields on this page are optional and can be deleted at any time, and by filling them out, you're giving us consent to share this data wherever your user profile appears.
                   </div>
-                  <button type="button" class="btn btn-primary">Update Profile</button>
+                  <button type="submit" class="btn btn-primary">Update Profile</button>
                   <button type="reset" class="btn btn-light">Reset Changes</button>
                 </form>
               </div>
@@ -105,12 +106,13 @@
               <div class="tab-pane" id="security">
                 <h6>SECURITY SETTINGS</h6>
                 <hr>
-                <form>
+                <form asp-controller="Account" asp-action="ChangePassword">
                   <div class="form-group">
                     <label class="d-block">Change Password</label>
-                    <input type="text" class="form-control" placeholder="Enter your old password">
-                    <input type="text" class="form-control mt-1" placeholder="New password">
-                    <input type="text" class="form-control mt-1" placeholder="Confirm new password">
+                    <input type="text" class="form-control" placeholder="Enter your old password" asp-for="OldPassword">
+                    <input type="text" class="form-control mt-1" placeholder="New password" asp-for="NewPassword">
+                    <input type="text" class="form-control mt-1" placeholder="Confirm new password" asp-for="ConfirmPassword">
+                    <button type="submit" class="btn btn-primary">Update Profile</button>
                   </div>
                 </form>
                 <hr>

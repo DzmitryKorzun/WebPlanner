@@ -70,11 +70,29 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No user found in the system.
+        ///   Looks up a localized string similar to Error creating standard unique username.
         /// </summary>
-        public static string RESPONSE_STATUS_NO_USER_FOUND {
+        public static string RESPONSE_STATUS_ERROR_CREATING_STANDART_UNIQUE_USERNAME {
             get {
-                return ResourceManager.GetString("RESPONSE_STATUS_NO_USER_FOUND", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_STATUS_ERROR_CREATING_STANDART_UNIQUE_USERNAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You entered the wrong password.
+        /// </summary>
+        public static string RESPONSE_STATUS_INVALID_PASSWORD {
+            get {
+                return ResourceManager.GetString("RESPONSE_STATUS_INVALID_PASSWORD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New password - empty.
+        /// </summary>
+        public static string RESPONSE_STATUS_NEW_PASSWORD_IS_NULL {
+            get {
+                return ResourceManager.GetString("RESPONSE_STATUS_NEW_PASSWORD_IS_NULL", resourceCulture);
             }
         }
         
@@ -88,11 +106,47 @@ namespace Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Password successfully changed.
+        /// </summary>
+        public static string RESPONSE_STATUS_PASSWORD_SUCCESSFULLY_CHANGED {
+            get {
+                return ResourceManager.GetString("RESPONSE_STATUS_PASSWORD_SUCCESSFULLY_CHANGED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to update password. Try again.
+        /// </summary>
+        public static string RESPONSE_STATUS_REPOSITORY_COULD_NOT_UPDATE_ACCOUNT_PASSWORD {
+            get {
+                return ResourceManager.GetString("RESPONSE_STATUS_REPOSITORY COULD NOT UPDATE ACCOUNT PASSWORD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cause of error unknown.
         /// </summary>
         public static string RESPONSE_STATUS_UNKNOW_ERROR {
             get {
                 return ResourceManager.GetString("RESPONSE_STATUS_UNKNOW_ERROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update profile information failed.
+        /// </summary>
+        public static string RESPONSE_STATUS_UPDATE_PROFILE_INFORMATION_FAILED {
+            get {
+                return ResourceManager.GetString("RESPONSE_STATUS_UPDATE_PROFILE_INFORMATION_FAILED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User email in change password is null.
+        /// </summary>
+        public static string RESPONSE_STATUS_USER_EMAIL_IN_CHANGE_PASSWORD_IS_NULL {
+            get {
+                return ResourceManager.GetString("RESPONSE_STATUS_USER_EMAIL_IN_CHANGE_PASSWORD_IS_NULL", resourceCulture);
             }
         }
         

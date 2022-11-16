@@ -10,6 +10,22 @@ namespace WebPlanner.Domain.Entity
 {
     public class Account
     {
+        public Account() { }
+        public Account(int id, string? name, string? email, string? hashPassword, string? salt, string? accountType, 
+            string? bio, string? uRL, string? location, string? userName)
+        {
+            Id = id;
+            Name = name;
+            Email = email;
+            HashPassword = hashPassword;
+            Salt = salt;
+            AccountType = accountType;
+            Bio = bio;
+            URL = uRL;
+            Location = location;
+            UserName = userName;
+        }
+
         [Key]
         public int Id { get; set; }
         public string? Name { get; set; }
