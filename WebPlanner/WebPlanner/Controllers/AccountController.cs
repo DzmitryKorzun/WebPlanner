@@ -33,7 +33,7 @@ namespace WebPlanner.Controllers
         }
         [HttpPost]
         [Authorize]
-        public async Task<IActionResult> UpdateProfileInformation([FromBody] UserSettingModel account)
+        public async Task<IActionResult> UpdateProfileInformation(UserSettingModel account)
         {
             var updatedAccount = new Account()
             {
@@ -52,7 +52,7 @@ namespace WebPlanner.Controllers
         }
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> ChangePassword([FromBody] UserSettingModel userSettingModel)
+        public async Task<IActionResult> ChangePassword(UserSettingModel userSettingModel)
         {
             var changeResponse = await accountService.ChangePassword(User?.Identity?.Name, 
                 userSettingModel.OldPassword, userSettingModel.NewPassword);

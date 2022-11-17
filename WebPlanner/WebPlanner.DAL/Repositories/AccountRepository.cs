@@ -23,12 +23,13 @@ namespace WebPlanner.DAL.Repositories
             return await context.SaveChangesAsync();
         }
 
-        public async Task<int> ChangePassword(Account account, string newPass)
+        public async Task<int> ChangePassword(Account account, string newPass, string newSalt)
         {
             var user = await context.Accounts.FirstOrDefaultAsync(x => x.Id == account.Id);
             if (user != null)
             {
                 user.HashPassword = newPass;
+                user.Salt = newSalt;
                 return context.SaveChanges();
             }
             else return -1;

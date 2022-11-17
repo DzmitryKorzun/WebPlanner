@@ -1,0 +1,20 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
+@{
+    ViewBag.Title = "MyDay";
+    Layout = "~/Views/_Layout.cshtml";
+}
+<!Docktype html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--<script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+<link href="@Url.Content("~/css/MyDay.css")" rel="stylesheet" type="text/css"/>
+<script src="~/js/MyDayCalendar.js"></script>
+  </head>
+  <body>
+<input placeholder="Select your date" type="text" name="checkIn" id="datepicker" value="" class="calendar"><i class="fas fa-calendar-check icon"></i>
+  </body>
+
+</html>
+

@@ -19,6 +19,7 @@
         text-align: center;
         color: white;
         cursor: pointer;
+        margin: 15px 0;
     }
 
     nav .animation {
@@ -83,7 +84,7 @@ nav .start-contact, a:nth-child(5):hover ~ .animation {
     background-color: #e67e22;
 }
 
-body {
+.item {
     font-size: 12px;
     font-family: sans-serif;
     background: #2c3e50;

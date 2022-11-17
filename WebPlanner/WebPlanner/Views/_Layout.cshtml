@@ -15,7 +15,7 @@
   @if(User.Identity.IsAuthenticated)
   {
     <a href="#">Home</a>     
-    <a href="#">My day</a>
+    <a asp-controller="MyDay" asp-action="ShowMyDay">My day</a>
     <a href="#">Wish list</a>
     <a asp-controller="CashSaving" asp-action="Cash">Cash saving</a>
     <a href="@Url.Action("SetUpAccount","Account")">Account</a>

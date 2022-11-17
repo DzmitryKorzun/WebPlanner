@@ -10,20 +10,6 @@ namespace WebPlanner.Domain.Auxiliary_Models
 {
     public class UserSettingModel
     {
-        public UserSettingModel(int id, string? name, string? email, string? hashPassword, string? salt, 
-            string? accountType, string? bio, string? uRL, string? location, string? userName)
-        {
-            this.Id = id;
-            this.Name = name;
-            this.Email = email;
-            this.HashPassword = hashPassword;
-            this.Salt = salt;
-            this.AccountType = accountType;
-            this.Bio = bio;
-            this.URL = uRL;
-            this.UserName = userName;
-            this.Location = location;
-        }
         public int Id { get; set; }
         public string? Name { get; set; }
         public string? Email { get; set; }

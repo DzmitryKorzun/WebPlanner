@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OECPLVtddwH6MdhVhDJtAECGhFGWaF07RKF9uwZJ5TQ=",
+  "Hash": "5dGBYwco2wZPpEI56CT0aQYjgBsNgdpbipA8kbHpY6Y=",
   "Source": "WebPlanner",
   "BasePath": "_content/WebPlanner",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\css\\LogRegForm.css"
     },
     {
+      "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\css\\MyDay.css",
+      "SourceId": "WebPlanner",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\",
+      "BasePath": "_content/WebPlanner",
+      "RelativePath": "css/MyDay.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MyDay.css"
+    },
+    {
       "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\css\\SetUpAccount.css",
       "SourceId": "WebPlanner",
       "SourceType": "Discovered",
@@ -151,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Chart.js"
+    },
+    {
+      "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\js\\MyDayCalendar.js",
+      "SourceId": "WebPlanner",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\",
+      "BasePath": "_content/WebPlanner",
+      "RelativePath": "js/MyDayCalendar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\MyDayCalendar.js"
     },
     {
       "Identity": "D:\\WebPlanner\\WebPlanner\\WebPlanner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

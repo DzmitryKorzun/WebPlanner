@@ -221,9 +221,12 @@ namespace WebPlanner.Service.Services
                         }
                         else
                         {
-                            var result = await repository.ChangePassword(account, newPassword);
+                            var newSalt = HashPassword.GenerateSalt();
+                            var newHashPassword = HashPassword.GetHash(newPassword, newSalt);
+                            var result = await repository.ChangePassword(account, newHashPassword, newSalt);
                             if (result > 0)
                             {
+
                                 return new BaseResponse<bool>
                                 {
                                     Data = true,
@@ -260,8 +263,19 @@ namespace WebPlanner.Service.Services
         {
             if (account != null)
             {
-                return new UserSettingModel(account.Id, account.Name, account.Email, account.HashPassword,
-                    account.Salt, account.AccountType, account.Bio, account.URL, account.Location, account.UserName);
+                return new UserSettingModel()
+                {
+                    Id = account.Id,
+                    AccountType = account.AccountType,
+                    Salt = account.Salt,
+                    Bio = account.Bio,
+                    Email = account.Email,
+                    Location = account.Location,
+                    Name = account.Name,
+                    HashPassword = account.HashPassword,
+                    URL = account.URL,
+                    UserName = account.UserName,
+                };
             }
             return null;
         }
