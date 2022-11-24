@@ -150,6 +150,9 @@
   <data name="RESPONSE_STATUS_USER_EMAIL_IN_CHANGE_PASSWORD_IS_NULL" xml:space="preserve">
     <value>User email in change password is null</value>
   </data>
+  <data name="RESPONSE_STATUS_USER_EMAIL_IS_NULL" xml:space="preserve">
+    <value>User email is null</value>
+  </data>
   <data name="RESPONSE_STATUS_USER_FOUNDED" xml:space="preserve">
     <value>User with this email exists</value>
   </data>

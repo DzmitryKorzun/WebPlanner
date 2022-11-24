@@ -33,7 +33,6 @@ namespace WebPlanner.DAL.Repositories
                 return context.SaveChanges();
             }
             else return -1;
-
         }
 
         public Task<int> Delete(int Id)

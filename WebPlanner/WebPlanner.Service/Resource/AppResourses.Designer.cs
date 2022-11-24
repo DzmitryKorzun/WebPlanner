@@ -151,6 +151,15 @@ namespace Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User email is null.
+        /// </summary>
+        public static string RESPONSE_STATUS_USER_EMAIL_IS_NULL {
+            get {
+                return ResourceManager.GetString("RESPONSE_STATUS_USER_EMAIL_IS_NULL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User with this email exists.
         /// </summary>
         public static string RESPONSE_STATUS_USER_FOUNDED {

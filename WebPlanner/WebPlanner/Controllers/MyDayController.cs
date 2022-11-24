@@ -8,6 +8,7 @@ namespace WebPlanner.Controllers
         public IActionResult ShowMyDay()
         {
 
+
             return View();
         }
     }

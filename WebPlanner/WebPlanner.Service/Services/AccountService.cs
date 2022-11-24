@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using System.Reflection;
-using System.Resources;
 using System.Security.Claims;
 using WebPlanner.DAL.Interfaces;
 using WebPlanner.Domain.Auxiliary_Models;
@@ -44,6 +42,15 @@ namespace WebPlanner.Service.Services
         }
         public async Task<BaseResponse<Account>> GetAccountByEmail(string email)
         {
+            if (String.IsNullOrEmpty(email))
+            {
+                return new BaseResponse<Account>
+                {
+                    Data = null,
+                    Message = Resource.AppResourses.RESPONSE_STATUS_USER_EMAIL_IS_NULL,
+                    StatusCode = ResponseStatus.InternalServerError
+                };
+            }
             var account = await repository.GetAccountByEmail(email);
             if (account == null)
             {
