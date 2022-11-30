@@ -47,7 +47,12 @@ namespace WebPlanner.DAL.Repositories
 
         public async Task<int> GetLastAccountId()
         {
-            return await context.Accounts.Select(x => x.Id).LastOrDefaultAsync();
+            var lastId = await context.Accounts.MaxAsync(x => x.Id);
+            if (lastId == 0)
+            {
+                return 1;
+            }
+            return lastId;
         }
 
         public Task<int> Update(int Id)

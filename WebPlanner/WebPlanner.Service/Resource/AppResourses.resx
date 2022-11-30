@@ -120,11 +120,20 @@
   <data name="APP_RES_FIRST_PART_OF_UNIQUE_USERNAME" xml:space="preserve">
     <value>User</value>
   </data>
+  <data name="RESPONSE_STATUS_APPEND_ITEMGROUP_OPERATION_FAILED" xml:space="preserve">
+    <value>Append itemgroup operation failed</value>
+  </data>
   <data name="RESPONSE_STATUS_ERROR_CREATING_STANDART_UNIQUE_USERNAME" xml:space="preserve">
     <value>Error creating standard unique username</value>
   </data>
   <data name="RESPONSE_STATUS_INVALID_PASSWORD" xml:space="preserve">
     <value>You entered the wrong password</value>
+  </data>
+  <data name="RESPONSE_STATUS_ITEMGROUP_NOT_FOUND" xml:space="preserve">
+    <value>Itemgroup not found</value>
+  </data>
+  <data name="RESPONSE_STATUS_NAME_OF_ITEMGROUP_IS_NULL_OR_EMPTY" xml:space="preserve">
+    <value>Name of itemgroup is null or empty</value>
   </data>
   <data name="RESPONSE_STATUS_NEW_PASSWORD_IS_NULL" xml:space="preserve">
     <value>New password - empty</value>

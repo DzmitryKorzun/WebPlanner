@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using WebPlanner.Domain.Enums;
+using WebPlanner.Service.Interfaces.ItemInterfaces;
 
 namespace WebPlanner.Controllers
 {
@@ -30,7 +32,11 @@ namespace WebPlanner.Controllers
             {
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
                         new ClaimsPrincipal(loginResponse.Data));
-                return RedirectToAction("Index", "Home");
+                if (User.IsInRole(AccountType.User.ToString()))
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                return RedirectToAction("AdminPanel", "Admin");
             }
             else 
             {

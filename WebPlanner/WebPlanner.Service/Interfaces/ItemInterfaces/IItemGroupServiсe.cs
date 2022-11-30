@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebPlanner.Service.Interfaces
+namespace WebPlanner.Service.Interfaces.ItemInterfaces
 {
     public interface IItemGroupServiсe
     {
         public Task<BaseResponse<IEnumerable<string>>> GetAll();
+        public Task<BaseResponse<int>> AddNewItemGroup(string name);
     }
 }

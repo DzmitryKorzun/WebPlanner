@@ -70,6 +70,15 @@ namespace Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Append itemgroup operation failed.
+        /// </summary>
+        public static string RESPONSE_STATUS_APPEND_ITEMGROUP_OPERATION_FAILED {
+            get {
+                return ResourceManager.GetString("RESPONSE_STATUS_APPEND_ITEMGROUP_OPERATION_FAILED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error creating standard unique username.
         /// </summary>
         public static string RESPONSE_STATUS_ERROR_CREATING_STANDART_UNIQUE_USERNAME {
@@ -84,6 +93,24 @@ namespace Resource {
         public static string RESPONSE_STATUS_INVALID_PASSWORD {
             get {
                 return ResourceManager.GetString("RESPONSE_STATUS_INVALID_PASSWORD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Itemgroup not found.
+        /// </summary>
+        public static string RESPONSE_STATUS_ITEMGROUP_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("RESPONSE_STATUS_ITEMGROUP_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of itemgroup is null or empty.
+        /// </summary>
+        public static string RESPONSE_STATUS_NAME_OF_ITEMGROUP_IS_NULL_OR_EMPTY {
+            get {
+                return ResourceManager.GetString("RESPONSE_STATUS_NAME_OF_ITEMGROUP_IS_NULL_OR_EMPTY", resourceCulture);
             }
         }
         

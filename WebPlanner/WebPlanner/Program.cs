@@ -6,21 +6,26 @@ using WebPlanner.DAL.Repositories;
 using WebPlanner.Service.Interfaces;
 using WebPlanner.Service.Services;
 using NLog.Web;
+using WebPlanner.Service.Services.ItemServices;
+using WebPlanner.Service.Interfaces.ItemInterfaces;
+using WebPlanner;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Logging.ClearProviders();
 builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
 builder.Host.UseNLog();
-builder.Services.AddRazorPages();
+
 var connection = builder.Configuration.GetConnectionString("DefaultConnection");
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(connection,serverVersion));
-builder.Services.AddScoped<IItemGroupRepository, ItemGroupRepository>();
-builder.Services.AddScoped<IItemGroupServiñe, ItemGroupServiñe>();
-builder.Services.AddScoped<IAccountRepository, AccountRepository>();
-builder.Services.AddScoped<IAccountService, AccountService>();
+var services = builder.Services;
+services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(connection, serverVersion));
+services.AddRazorPages();
+services.AddScoped<IItemGroupServiñe, ItemGroupServiñe>();
+services.AddScoped<IAccountService, AccountService>();
+services.AddRepositories();
+services.AddServices();
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
         options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Home/Index");

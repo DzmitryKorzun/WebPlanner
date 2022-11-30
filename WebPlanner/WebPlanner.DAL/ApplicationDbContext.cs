@@ -19,7 +19,7 @@ namespace WebPlanner.DAL
         #region DbSets
         #region GeneralDbSets
         public DbSet<ItemGroup> ItemGroups { get; set; }
-        public DbSet<ItemSubgrop> ItemSubgrops { get; set; }
+        public DbSet<ItemSubgroup> ItemSubgrops { get; set; }
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Color> Colors { get; set; }
         public DbSet<HeadphonesConstruction> HeadphonesConstructions { get; set; }

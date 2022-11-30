@@ -14,6 +14,7 @@ namespace WebPlanner.Controllers
             this.accountService = accountService;
         }
         [Authorize]
+
         public async Task<IActionResult> SetUpAccount()
         {
             if (User?.Identity?.Name != null)
@@ -62,5 +63,18 @@ namespace WebPlanner.Controllers
             }
             return RedirectToAction("Error");
         }
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public IActionResult AdminPanel()
+        {
+            return View();
+        }
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public IActionResult AdminPanel(string res)
+        {
+            return View();
+        }
+
     }
 }
