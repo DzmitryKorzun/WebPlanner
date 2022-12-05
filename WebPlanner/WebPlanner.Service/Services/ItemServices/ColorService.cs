@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using WebPlanner.Service.Interfaces.ItemInterfaces;
+
+namespace WebPlanner.Service.Services.ItemServices
+{
+    public class ColorService : IColorService
+    {
+
+    }
+}
