@@ -12,5 +12,17 @@ namespace WebPlanner.Domain.Entity.GeneralModels
         [Key]
         public int ScreenId { get; set; }
         public string? ScreenName { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is ScreenType type &&
+                   ScreenId == type.ScreenId &&
+                   ScreenName == type.ScreenName;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(ScreenId, ScreenName);
+        }
     }
 }

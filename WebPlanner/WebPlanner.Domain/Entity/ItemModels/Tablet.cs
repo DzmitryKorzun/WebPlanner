@@ -36,5 +36,54 @@ namespace WebPlanner.Domain.Entity.ItemModels
         public ScreenType? ScreenType { get; set; }
         public Color? Color { get; set; }
         public Materials? Materials { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Tablet tablet &&
+                   Id == tablet.Id &&
+                   Name == tablet.Name &&
+                   IdManufactorer == tablet.IdManufactorer &&
+                   MarketDate == tablet.MarketDate &&
+                   Diagonal == tablet.Diagonal &&
+                   Resolurion == tablet.Resolurion &&
+                   RAM == tablet.RAM &&
+                   Built_in_memory == tablet.Built_in_memory &&
+                   Id_OS == tablet.Id_OS &&
+                   BatteryCapacity == tablet.BatteryCapacity &&
+                   SIM_Card_amount == tablet.SIM_Card_amount &&
+                   Id_ScreenType == tablet.Id_ScreenType &&
+                   Id_Color == tablet.Id_Color &&
+                   Id_Material == tablet.Id_Material &&
+                   EqualityComparer<Manufacturer?>.Default.Equals(Manufacturer, tablet.Manufacturer) &&
+                   EqualityComparer<GeneralModels.OperatingSystem?>.Default.Equals(OperatingSystem, tablet.OperatingSystem) &&
+                   EqualityComparer<ScreenType?>.Default.Equals(ScreenType, tablet.ScreenType) &&
+                   EqualityComparer<Color?>.Default.Equals(Color, tablet.Color) &&
+                   EqualityComparer<Materials?>.Default.Equals(Materials, tablet.Materials);
+        }
+
+        public override int GetHashCode()
+        {
+            HashCode hash = new HashCode();
+            hash.Add(Id);
+            hash.Add(Name);
+            hash.Add(IdManufactorer);
+            hash.Add(MarketDate);
+            hash.Add(Diagonal);
+            hash.Add(Resolurion);
+            hash.Add(RAM);
+            hash.Add(Built_in_memory);
+            hash.Add(Id_OS);
+            hash.Add(BatteryCapacity);
+            hash.Add(SIM_Card_amount);
+            hash.Add(Id_ScreenType);
+            hash.Add(Id_Color);
+            hash.Add(Id_Material);
+            hash.Add(Manufacturer);
+            hash.Add(OperatingSystem);
+            hash.Add(ScreenType);
+            hash.Add(Color);
+            hash.Add(Materials);
+            return hash.ToHashCode();
+        }
     }
 }

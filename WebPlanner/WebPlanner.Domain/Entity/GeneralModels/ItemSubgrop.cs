@@ -16,5 +16,19 @@ namespace WebPlanner.Domain.Entity.GeneralModels
         [ForeignKey("GroupId")]
         public int GroupId { get; set; }
         public ItemGroup? ItemGroup { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is ItemSubgroup subgroup &&
+                   Id == subgroup.Id &&
+                   Name == subgroup.Name &&
+                   GroupId == subgroup.GroupId &&
+                   EqualityComparer<ItemGroup?>.Default.Equals(ItemGroup, subgroup.ItemGroup);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, Name, GroupId, ItemGroup);
+        }
     }
 }

@@ -15,5 +15,22 @@ namespace WebPlanner.Domain.Entity
         public bool IsComplited { get; set; }
         public string? Name { get; set; }
         public string? Description { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is MyDay day &&
+                   Id == day.Id &&
+                   TaskStart == day.TaskStart &&
+                   TaskEnd == day.TaskEnd &&
+                   IsAllDay == day.IsAllDay &&
+                   IsComplited == day.IsComplited &&
+                   Name == day.Name &&
+                   Description == day.Description;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, TaskStart, TaskEnd, IsAllDay, IsComplited, Name, Description);
+        }
     }
 }

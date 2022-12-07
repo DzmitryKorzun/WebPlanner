@@ -30,5 +30,44 @@ namespace WebPlanner.Domain.Entity.ItemModels
         public LightProjectorSource? LightProjectorSource { get; set; }
         public ProjectorPurpose? ProjectorPurpose { get; set; }
         public ProjectorMatrixType? ProjectorMatrixType { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Projector projector &&
+                   Id == projector.Id &&
+                   Name == projector.Name &&
+                   IdManufacturer == projector.IdManufacturer &&
+                   IdLightSource == projector.IdLightSource &&
+                   IdProjectorPurpose == projector.IdProjectorPurpose &&
+                   IdProjectorMatrixType == projector.IdProjectorMatrixType &&
+                   LightFlow == projector.LightFlow &&
+                   Contrast == projector.Contrast &&
+                   MaxScreenSize == projector.MaxScreenSize &&
+                   MinScreenSize == projector.MinScreenSize &&
+                   EqualityComparer<Manufacturer?>.Default.Equals(Manufacturer, projector.Manufacturer) &&
+                   EqualityComparer<LightProjectorSource?>.Default.Equals(LightProjectorSource, projector.LightProjectorSource) &&
+                   EqualityComparer<ProjectorPurpose?>.Default.Equals(ProjectorPurpose, projector.ProjectorPurpose) &&
+                   EqualityComparer<ProjectorMatrixType?>.Default.Equals(ProjectorMatrixType, projector.ProjectorMatrixType);
+        }
+
+        public override int GetHashCode()
+        {
+            HashCode hash = new HashCode();
+            hash.Add(Id);
+            hash.Add(Name);
+            hash.Add(IdManufacturer);
+            hash.Add(IdLightSource);
+            hash.Add(IdProjectorPurpose);
+            hash.Add(IdProjectorMatrixType);
+            hash.Add(LightFlow);
+            hash.Add(Contrast);
+            hash.Add(MaxScreenSize);
+            hash.Add(MinScreenSize);
+            hash.Add(Manufacturer);
+            hash.Add(LightProjectorSource);
+            hash.Add(ProjectorPurpose);
+            hash.Add(ProjectorMatrixType);
+            return hash.ToHashCode();
+        }
     }
 }

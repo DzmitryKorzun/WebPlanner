@@ -27,5 +27,38 @@ namespace WebPlanner.Domain.Entity.ItemModels
         public Materials? Materials { get; set; }
         public Color? Color { get; set; }
         public Manufacturer? Manufacturer { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is FitnessBracelet bracelet &&
+                   Id == bracelet.Id &&
+                   Name == bracelet.Name &&
+                   Id_OS == bracelet.Id_OS &&
+                   MarketDate == bracelet.MarketDate &&
+                   Id_HousingMaterial == bracelet.Id_HousingMaterial &&
+                   Id_HousingColor == bracelet.Id_HousingColor &&
+                   Id_Manufacturer == bracelet.Id_Manufacturer &&
+                   EqualityComparer<GeneralModels.OperatingSystem?>.Default.Equals(OperatingSystem, bracelet.OperatingSystem) &&
+                   EqualityComparer<Materials?>.Default.Equals(Materials, bracelet.Materials) &&
+                   EqualityComparer<Color?>.Default.Equals(Color, bracelet.Color) &&
+                   EqualityComparer<Manufacturer?>.Default.Equals(Manufacturer, bracelet.Manufacturer);
+        }
+
+        public override int GetHashCode()
+        {
+            HashCode hash = new HashCode();
+            hash.Add(Id);
+            hash.Add(Name);
+            hash.Add(Id_OS);
+            hash.Add(MarketDate);
+            hash.Add(Id_HousingMaterial);
+            hash.Add(Id_HousingColor);
+            hash.Add(Id_Manufacturer);
+            hash.Add(OperatingSystem);
+            hash.Add(Materials);
+            hash.Add(Color);
+            hash.Add(Manufacturer);
+            return hash.ToHashCode();
+        }
     }
 }

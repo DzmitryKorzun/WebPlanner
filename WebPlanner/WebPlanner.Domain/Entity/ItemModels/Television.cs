@@ -28,5 +28,42 @@ namespace WebPlanner.Domain.Entity.ItemModels
         public Manufacturer? Manufacturer { get; set; }
         public TV_Type? TV_type { get; set; }
         public ScreenType? ScreenType { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Television television &&
+                   TelevisionId == television.TelevisionId &&
+                   TelevisionName == television.TelevisionName &&
+                   Id_Manufactorer == television.Id_Manufactorer &&
+                   MarketDare == television.MarketDare &&
+                   Diagonal == television.Diagonal &&
+                   Resolurion == television.Resolurion &&
+                   Id_TV_type == television.Id_TV_type &&
+                   IsSmart == television.IsSmart &&
+                   Id_ScreenType == television.Id_ScreenType &&
+                   IsCurvedScreen == television.IsCurvedScreen &&
+                   EqualityComparer<Manufacturer?>.Default.Equals(Manufacturer, television.Manufacturer) &&
+                   EqualityComparer<TV_Type?>.Default.Equals(TV_type, television.TV_type) &&
+                   EqualityComparer<ScreenType?>.Default.Equals(ScreenType, television.ScreenType);
+        }
+
+        public override int GetHashCode()
+        {
+            HashCode hash = new HashCode();
+            hash.Add(TelevisionId);
+            hash.Add(TelevisionName);
+            hash.Add(Id_Manufactorer);
+            hash.Add(MarketDare);
+            hash.Add(Diagonal);
+            hash.Add(Resolurion);
+            hash.Add(Id_TV_type);
+            hash.Add(IsSmart);
+            hash.Add(Id_ScreenType);
+            hash.Add(IsCurvedScreen);
+            hash.Add(Manufacturer);
+            hash.Add(TV_type);
+            hash.Add(ScreenType);
+            return hash.ToHashCode();
+        }
     }
 }

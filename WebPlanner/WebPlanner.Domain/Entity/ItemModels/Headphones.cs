@@ -21,5 +21,22 @@ namespace WebPlanner.Domain.Entity.ItemModels
         public bool IsWireless { get; set; }
         public Manufacturer? Manufacturer { get; set; }
         public HeadphonesConstruction? HeadphonesConstruction { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Headphones headphones &&
+                   Id == headphones.Id &&
+                   Name == headphones.Name &&
+                   Id_Manufacturer == headphones.Id_Manufacturer &&
+                   Id_HeadphonesConstruction == headphones.Id_HeadphonesConstruction &&
+                   IsWireless == headphones.IsWireless &&
+                   EqualityComparer<Manufacturer?>.Default.Equals(Manufacturer, headphones.Manufacturer) &&
+                   EqualityComparer<HeadphonesConstruction?>.Default.Equals(HeadphonesConstruction, headphones.HeadphonesConstruction);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, Name, Id_Manufacturer, Id_HeadphonesConstruction, IsWireless, Manufacturer, HeadphonesConstruction);
+        }
     }
 }

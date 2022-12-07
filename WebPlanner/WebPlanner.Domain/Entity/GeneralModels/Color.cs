@@ -16,5 +16,20 @@ namespace WebPlanner.Domain.Entity.GeneralModels
         public List<FitnessBracelet>? FitnessBracelets { get; set; }
         public List<SmartPhone>? SmartPhones { get; set; }
         public List<Tablet>? Tablets { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Color color &&
+                   Id == color.Id &&
+                   Name == color.Name &&
+                   EqualityComparer<List<FitnessBracelet>?>.Default.Equals(FitnessBracelets, color.FitnessBracelets) &&
+                   EqualityComparer<List<SmartPhone>?>.Default.Equals(SmartPhones, color.SmartPhones) &&
+                   EqualityComparer<List<Tablet>?>.Default.Equals(Tablets, color.Tablets);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, Name, FitnessBracelets, SmartPhones, Tablets);
+        }
     }
 }

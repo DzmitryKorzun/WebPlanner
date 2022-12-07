@@ -23,5 +23,36 @@ namespace WebPlanner.Domain.Entity.ItemModels
         public bool IsColorDisplay { get; set; }
         public string? Resolurion { get; set; }
         public Manufacturer? Manufacturer { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is ElectronicBook book &&
+                   Id == book.Id &&
+                   Name == book.Name &&
+                   IdManufactorer == book.IdManufactorer &&
+                   Diagonal == book.Diagonal &&
+                   IsScreenBacklight == book.IsScreenBacklight &&
+                   IsSensorDisplay == book.IsSensorDisplay &&
+                   IsHasWiFi == book.IsHasWiFi &&
+                   IsColorDisplay == book.IsColorDisplay &&
+                   Resolurion == book.Resolurion &&
+                   EqualityComparer<Manufacturer?>.Default.Equals(Manufacturer, book.Manufacturer);
+        }
+
+        public override int GetHashCode()
+        {
+            HashCode hash = new HashCode();
+            hash.Add(Id);
+            hash.Add(Name);
+            hash.Add(IdManufactorer);
+            hash.Add(Diagonal);
+            hash.Add(IsScreenBacklight);
+            hash.Add(IsSensorDisplay);
+            hash.Add(IsHasWiFi);
+            hash.Add(IsColorDisplay);
+            hash.Add(Resolurion);
+            hash.Add(Manufacturer);
+            return hash.ToHashCode();
+        }
     }
 }
